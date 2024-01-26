@@ -1,0 +1,17 @@
+---
+title: Kacper Gilka Art - Designs
+layout: 'base.njk'
+---
+        <main class="designs-main">
+            <h1>Designs For Sale</h1>
+            <div class="designs-panel">
+
+                {%- for post in collections.post | reverse -%}
+                    <div class="design-box">
+                        <h2 class="design-name"><a href="{{ post.url }}" data-title="Press for more info">{{ post.data.title }}</a></h2>
+                        <img class="main-image" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+                    </div>
+                {%- endfor -%}
+
+            </div>
+        </main>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="../style/styles.css" />
+        <link rel="icon" href="../assets/favicon.jpg" type="image/png" sizes="16x16">
+        <script src="/merch.js"></script>
+        <script src="/designs.js"></script>
+    </head>
+    <body>
+
+    {% include 'header.njk' %}
+    {{ content | safe }}
+    {% include 'footer.njk' %}
+
+</body>
+</html>
