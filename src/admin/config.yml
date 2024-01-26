@@ -11,7 +11,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Tytuł", name: "title", widget: "string" }
-      - { label: "Opis", name: "description", widget: "string" }
+      - { label: "Link do projektu", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Obraz Postu", name: "image", widget: "image" }
       - { label: "Alt zdjęcia", name: "imageAlt", widget: "string" }
