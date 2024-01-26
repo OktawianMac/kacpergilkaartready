@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - name: "post"
+    label: "Add Design"
+    folder: "src/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Link do projektu", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Obraz Postu", name: "image", widget: "image" }
+      - { label: "Alt zdjęcia", name: "imageAlt", widget: "string" }
+      - { label: 'Galeria', name: 'gallery', widget: 'list', multiple: true, required: false, fields: [
+          { label: 'Zdjęcie', name: 'image', widget: 'image' },
+          { label: 'Podpis', name: 'caption', widget: 'string' },
+        ]
+      }

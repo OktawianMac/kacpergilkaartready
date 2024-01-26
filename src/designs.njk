@@ -9,7 +9,7 @@ layout: 'base.njk'
                 {%- for post in collections.post | reverse -%}
                     <div class="design-box">
                         <h2 class="design-name"><a href="{{ post.url }}" data-title="Press for more info">{{ post.data.title }}</a></h2>
-                        <a href="{{ post.url }}" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"></a>
+                        <a href="{{ post.url }}"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"></a>
                     </div>
                 {%- endfor -%}
 
