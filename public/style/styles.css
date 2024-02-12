@@ -401,12 +401,6 @@ footer a:active {
 
 /* media-query */
 
-@media (max-width: 1500px) {
-    .index-footer {
-        position: relative;
-    }
-}
-
 @media (max-width: 900px) {
     .designs-panel {
         flex-direction: column;
@@ -424,6 +418,18 @@ footer a:active {
     .designs-panel a[data-title] {
         top: -20px;
         left: 0;
+    }
+
+    .contact-main h1 {
+        font-size: 24px;
+    }
+
+    .contact-main h2 {
+        font-size: 16px;
+    }
+
+    .index-main, .contact-main {
+        height: 100vh;
     }
 }
 
@@ -454,8 +460,23 @@ footer a:active {
         font-size: 16px;
     }
 
+    main h3 {
+        font-size: 16px;
+    }
+
     .index-footer {
-        position: relative;
+        text-align: center;
+        font-size: 15px;
+        color: rgb(185, 118, 92);
+        text-decoration: none;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgb(24, 24, 24);
+        z-index: 1;
     }
 
     .logos {
@@ -503,5 +524,19 @@ footer a:active {
 
     .logos img {
         width: 100%;
+    }
+
+    .index-footer {
+        text-align: center;
+        font-size: 15px;
+        color: rgb(185, 118, 92);
+        text-decoration: none;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgb(24, 24, 24);
     }
 }
